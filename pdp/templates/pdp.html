@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Product details{% endblock %}
+
+{% block body %}
+<!-- Added image and description for the preview of the page -->
+<section class="bg-white text-black p-5 text-left">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h3 class="my-3">Benewake TF-Luna 8m LiDAR Distance Sensor</h3>
+                <p class="lead my-4">
+                    The Benewake TF-Luna 8m LiDAR Distance Sensor is a single-point ranging LiDAR, based on the TOF principle. 
+                    With unique optical and electrical design, it can achieve stable, accurate, and highly sensitive range measurement.
+                    <li>Benewake TF-Luna 8m LiDAR Distance Sensor</li>
+                    <li>Features a low-cost ranging LiDAR module</li>
+                    <li>Has an operating range of 0.2 - 8 m</li>
+                    <li>Gives unique optical and electrical design</li>
+                    <li>Provides highly stable, accurate, sensitive range detection</li>
+                    <li>Supports power saving mode for power-sensitive applications</li>
+                    <li>Suitable for scenarios with strict load requirements</li>
+                </p>
+                <div>
+                <!--Price will be imported from back_office-->
+                <h4>Price: €22,84</h4>
+                </div>
+                <div>
+                    <h6>Availibility: <span class="text-success">In stock</span></h6>
+                </div>
+                <div>
+                    <h6>Quantity:</h6>
+                </div>
+                <!--Quantity Buttons-->
+                <div class="d-grid gap-5 d-md-block">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                </div>
+                <button class="btn btn-success btn-lg my-5">Add to cart</button>
+            </div>
+            <img 
+            class="img-fluid w-100" 
+            src="https://eu.robotshop.com/cdn/shop/products/tf-luna-8m-lidar-distance-sensor_ade9a8c5-c2bb-4426-b758-72c56c202a25_600x.jpg?v=1695182210"
+            alt="" />
+        </div>
+
+    </div>
+
+</section>
+{% endblock body %}
