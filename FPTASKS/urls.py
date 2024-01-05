@@ -24,7 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', lambda request: HttpResponseRedirect('home/')),
     path('backoffice/products/', include('back_office.products.urls')),
-    path('pdp/', include('pdp.urls')),
+    path('pdp/<int:pk>', include('pdp.urls')),
+    path('products/', include('front_office.products_page.urls')),
 ] 
 
 if settings.DEBUG:

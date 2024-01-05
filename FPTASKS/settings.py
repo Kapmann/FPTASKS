@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pdp',
     'back_office.products',
+    'front_office.products_page',
 ]
 
 MIDDLEWARE = [

@@ -6,8 +6,8 @@ from django.db.models import DecimalField
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    description = models.TextField(null=True, blank=True, max_length=250)
-    details = models.TextField(null=True, blank=True, max_length=350)
+    description = models.TextField(null=True, blank=True, max_length=350)
+    details = models.TextField(null=True, blank=True, max_length=1000)
     price = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     image = models.ImageField(upload_to='uploads/product/', blank=True, null=True)
     amount_sold = models.PositiveIntegerField(default=0)

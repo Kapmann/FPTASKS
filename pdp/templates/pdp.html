@@ -2,13 +2,12 @@
 {% block title %}Product details{% endblock %}
 
 {% block body %}
-<!-- Added image and description for the preview of the page -->
 <section class="bg-white text-black p-5 text-left">
     <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
             <div>
                 <h3 class="my-3">
-                    {% for product in product_list %}
+                    
                         {{ product.name }}                        
                 </h3>
                     <p class="lead my-4">                    
@@ -34,22 +33,22 @@
                     <br\>
                 </div>
                 <!--Quantity Buttons-->
-                <div class="d-grid gap-5 d-md-block">
+                <!--<div class="d-grid gap-5 d-md-block">
                     <button class="btn btn-outline-secondary" type="button">-</button>
-                    <!--Quantity amount field-->
+                    Quantity amount field-->
                     <!--<form action ="" method=POST>
                         {% csrf_token %}
                         {{ form }}
                         <input type="submit" value="Submit">
                     </form>-->
-                    <button class="btn btn-outline-secondary" type="button">+</button>
-                </div>
+                    <!--<button class="btn btn-outline-secondary" type="button">+</button>-->
+                <!--</div>-->
                 <button class="btn btn-success btn-lg my-3">Add to cart</button>
             </div>
             <img 
             class="img-fluid w-100" 
             src="{{ product.image.url }}"
-            {% endfor %}
+            
             alt="" />
         </div>
 
