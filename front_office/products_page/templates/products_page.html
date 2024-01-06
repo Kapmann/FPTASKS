@@ -28,7 +28,7 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <a href="{% url 'pdp' product.id %}" style="color: rgb(53, 52, 52); text-decoration: none;">
+                            <a href="{% url 'front_office.pdp_page' product.id %}" style="color: rgb(53, 52, 52); text-decoration: none;">
                             <img class="card-img-top" src="{{ product.image.url }}" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">

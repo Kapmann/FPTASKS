@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pdp',
+    'front_office.pdp_page',
     'back_office.products',
     'front_office.products_page',
 ]

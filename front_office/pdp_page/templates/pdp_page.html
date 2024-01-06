@@ -18,9 +18,7 @@
                         </small>
                 <div>
                     <br>
-                    <h4>Price: EUR
-                        {{ product.price }}
-                        
+                    <h4>Price: €{{ product.price }}
                     <br\>
                     </h4>
                     <br>
@@ -32,27 +30,13 @@
                     <h6>Quantity:</h6>
                     <br\>
                 </div>
-                <!--Quantity Buttons-->
-                <!--<div class="d-grid gap-5 d-md-block">
-                    <button class="btn btn-outline-secondary" type="button">-</button>
-                    Quantity amount field-->
-                    <!--<form action ="" method=POST>
-                        {% csrf_token %}
-                        {{ form }}
-                        <input type="submit" value="Submit">
-                    </form>-->
-                    <!--<button class="btn btn-outline-secondary" type="button">+</button>-->
-                <!--</div>-->
                 <button class="btn btn-success btn-lg my-3">Add to cart</button>
             </div>
             <img 
             class="img-fluid w-100" 
             src="{{ product.image.url }}"
-            
             alt="" />
         </div>
-
     </div>
-
 </section>
 {% endblock body %}
