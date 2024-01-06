@@ -22,7 +22,14 @@
                     <br\>
                     </h4>
                     <br>
-                    <h6>Availibility: <span class="text-success">In stock</span></h6>
+                    <h6>Availibility: 
+                        {% if product.in_stock %}
+                        <span class="text-success">                                        
+                        In stock</span>
+                        {% else %}
+                        <span class="text-danger">Out of stock</span>
+                        {% endif %}
+                    </h6>
                     <br\>
                 </div>
                 <div>

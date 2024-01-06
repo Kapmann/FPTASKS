@@ -10,6 +10,7 @@ class Product(models.Model):
     details = models.TextField(null=True, blank=True, max_length=1000)
     price = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     image = models.ImageField(upload_to='uploads/product/', blank=True, null=True)
+    in_stock = models.BooleanField(default=False)
     amount_sold = models.PositiveIntegerField(default=0)
     brand = models.ForeignKey(
         'Brand', on_delete=models.SET_NULL, null=True, blank=True)

@@ -36,7 +36,15 @@
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"> {{ product.name }} </h5></a>
                                     <!-- Product brand-->
-                                    Manufacturer: {{ product.brand }}<br><br>
+                                    Manufacturer: {{ product.brand }}<br>
+                                    <h7>Availibility: 
+                                        {% if product.in_stock %}
+                                        <span class="text-success">                                        
+                                        In stock</span>
+                                        {% else %}
+                                        <span class="text-danger">Out of stock</span>
+                                        {% endif %}
+                                    </h7><br><br>
                                     <!-- Product price-->
                                     <h5>Price: €{{ product.price }}</h5>
                                 </div>
